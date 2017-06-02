@@ -2,7 +2,7 @@ package jpu2016.dogfight.model;
 
 import java.util.ArrayList;
 
-public interface IDogFightModel {
+public interface IDogfightModel {
 	
 	public IArea getArea();
 	public void buildArea(Dimension dimension);
