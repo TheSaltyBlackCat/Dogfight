@@ -7,7 +7,7 @@ import jpu2016.dogfight.controller.UserOrder;
 
 public class EventPerformer {
 	private IOrderPerformer orderPerformer;
-	UserOrder userorder = new UserOrder();
+	UserOrder userorder = new UserOrder(0, null);
 	
 	public EventPerformer(IOrderPerformer orderPerformer){
 		
@@ -18,7 +18,7 @@ public class EventPerformer {
 	}
 	
 	private UserOrder keyCodeToUserOrder(int keyCode){
-		
+		return null;
 	}
 	
 }

@@ -1,7 +1,10 @@
 package jpu2016.dogfight.model;
 
+import java.awt.Image;
 import java.util.ArrayList;
 import jpu2016.dogfight.model.Mobile;
+import java.util.Observable;
+
 
 public class DogfightModel implements IDogfightModel{
 	private IMobile mobiles;

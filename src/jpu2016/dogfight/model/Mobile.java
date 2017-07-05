@@ -6,6 +6,10 @@ import java.awt.Point;
 
 public class Mobile implements IMobile{
 	private int speed;
+	private Image images;
+	private Direction direction;
+	private Dimension dimension;
+	private Position position;
 	
 	public Mobile(Direction direction, Position position, Dimension dimension, int speed, String image){
 		
