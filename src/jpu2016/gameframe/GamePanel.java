@@ -3,10 +3,11 @@ package jpu2016.gameframe;
 import java.util.Observable;
 import java.util.Observer;
 import java.awt.Graphics;
+
 import javax.swing.JPanel;
 
 public class GamePanel implements Observer {
-	private Observable observable;
+	
 	private IGraphicsBuilder graphicsBuilder;
 	
 	public GamePanel(IGraphicsBuilder graphicBuilder){

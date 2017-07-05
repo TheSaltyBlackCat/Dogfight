@@ -6,7 +6,7 @@ import jpu2016.dogfight.model.Mobile;
 import java.util.Observable;
 
 
-public class DogfightModel implements IDogfightModel{
+public class DogfightModel extends Observable implements IDogfightModel{
 	private IMobile mobiles;
 	private Sky sky;
 	
@@ -26,8 +26,8 @@ public class DogfightModel implements IDogfightModel{
 		
 	}
 	
-	public ArrayList<Mobile> getMobiles(){
-		
+	public ArrayList<IMobile> getMobiles(){
+		return null;
 	}
 	
 	public IMobile getMobileByPlayer(int player){
