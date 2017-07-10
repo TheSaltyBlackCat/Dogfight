@@ -12,23 +12,27 @@ public class Mobile implements IMobile{
 	private Position position;
 	
 	public Mobile(Direction direction, Position position, Dimension dimension, int speed, String image){
-		
+		this.direction = direction;
+		this.position = position;
+		this.dimension = dimension;
+		this.speed = speed;
+		this.images = 
 	}
 	
 	public Direction getDirection(){
-		return null;
+		return this.direction;
 	}
 	
 	public void setDirection(Direction direction){
-		
+		this.direction = direction;
 	}
 	
 	public Point getPosition(){
-		return null;
+		return new Point((int) this.position.getX(), (int) this.position.getY());
 	}
 	
 	public Dimension getDimension(){
-		return null;
+		return this.dimension;
 	}
 	
 	public int getSpeed(){
@@ -36,11 +40,11 @@ public class Mobile implements IMobile{
 	}
 	
 	public int getWidth(){
-		return 0;
+		return this.dimension.getWidth();
 	}
 	
 	public int getHeight(){
-		return 0;
+		return this.dimension.getHeight();
 	}
 	
 	public void move(){
@@ -52,23 +56,26 @@ public class Mobile implements IMobile{
 	}
 	
 	public boolean isPlayer(int player){
-		return true;
+		if (player == 1){
+			return true;
+		}
+		else return false;
 	}
 	
 	private void moveUp(){
-		
+		this.position.setY(this.position.getY() + this.speed);
 	}
 	
 	private void moveDown(){
-		
+		this.position.setY(this.position.getY() - this.speed);
 	}
 	
 	private void moveLeft(){
-		
+		this.position.setX(this.position.getX() - this.speed);
 	}
 	
 	private void moveRight(){
-		
+		this.position.setX(this.position.getX() + this.speed);
 	}
 	
 	public Color getColor(){
@@ -88,12 +95,11 @@ public class Mobile implements IMobile{
 	}
 	
 	public Image getImage(){
-		return null;
+		return this.images;
 	}
 
 	@Override
 	public void setDogfightModel(DogfightModel dogfightModel) {
-		// TODO Auto-generated method stub
 		
 	}
 }

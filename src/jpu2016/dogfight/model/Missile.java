@@ -14,15 +14,18 @@ public class Missile {
 	}
 	
 	public int getWidthWithADirection(Direction direction){
-		return 0;
+		return this.WIDTH;
 	}
 	
 	public int getHeightWithADirection(Direction direction){
-		return 0;
+		return this.HEIGHT;
 	}
 	
 	public void move(){
-		
+		if (this.distanceTraveled < MAX_DISTANCE_TRAVELED){
+			this.distanceTraveled = this.distanceTraveled + SPEED;
+		}
+		else 
 	}
 	
 	public boolean isWeapon(){
